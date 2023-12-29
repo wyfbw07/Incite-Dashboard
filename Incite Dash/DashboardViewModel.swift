@@ -1,6 +1,6 @@
 //
 //  DashboardViewModel.swift
-//  Incite Dashboard
+//  Incite Dash
 //
 //  Created by Yifan Wang on 12/28/23.
 //

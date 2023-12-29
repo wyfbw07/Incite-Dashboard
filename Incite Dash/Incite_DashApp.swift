@@ -1,6 +1,6 @@
 //
-//  Incite_DashboardApp.swift
-//  Incite Dashboard
+//  Incite_DashApp.swift
+//  Incite Dash
 //
 //  Created by Yifan Wang on 12/28/23.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Incite_DashboardApp: App {
+struct Incite_DashApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
