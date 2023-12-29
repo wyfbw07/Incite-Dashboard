@@ -1,0 +1,222 @@
+{
+    "devices": [
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/btouumlpna500081h3d0",
+            "type": "humidity",
+            "productNumber": "102087",
+            "labels": {
+                "kit": "kme-82-qff",
+                "name": "Humidity Outdoor"
+            },
+            "reported": {
+                "networkStatus": {
+                    "signalStrength": 61,
+                    "rssi": -73,
+                    "updateTime": "2023-12-29T02:23:21.879000Z",
+                    "cloudConnectors": [
+                        {
+                            "id": "ch0fh4qo0002mh5tqcdg",
+                            "signalStrength": 61,
+                            "rssi": -73
+                        }
+                    ],
+                    "transmissionMode": "LOW_POWER_STANDARD_MODE"
+                },
+                "batteryStatus": {
+                    "percentage": 100,
+                    "updateTime": "2023-12-28T05:59:36.455000Z"
+                },
+                "humidity": {
+                    "temperature": 7.6,
+                    "relativeHumidity": 79.15,
+                    "updateTime": "2023-12-29T02:23:21.879000Z"
+                },
+                "touch": {
+                    "updateTime": "2023-12-25T03:44:30.248000Z"
+                }
+            }
+        },
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/c3vp5r80v0qg00bojclg",
+            "type": "touch",
+            "productNumber": "102093",
+            "labels": {
+                "kit": "kme-82-qff",
+                "name": "Touch"
+            },
+            "reported": {
+                "networkStatus": {
+                    "signalStrength": 60,
+                    "rssi": -74,
+                    "updateTime": "2023-12-29T02:31:44.168436Z",
+                    "cloudConnectors": [
+                        {
+                            "id": "ch0fh4qo0002mh5tqcdg",
+                            "signalStrength": 60,
+                            "rssi": -74
+                        }
+                    ],
+                    "transmissionMode": "LOW_POWER_STANDARD_MODE"
+                },
+                "batteryStatus": {
+                    "percentage": 100,
+                    "updateTime": "2023-12-28T06:07:50.961000Z"
+                },
+                "touch": {
+                    "updateTime": "2023-12-25T06:46:00.354000Z"
+                }
+            }
+        },
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/c3vp8l4q88bg00f13phg",
+            "type": "proximity",
+            "productNumber": "102096",
+            "labels": {
+                "kit": "kme-82-qff",
+                "name": "Fridge Door"
+            },
+            "reported": {
+                "networkStatus": {
+                    "signalStrength": 73,
+                    "rssi": -66,
+                    "updateTime": "2023-12-29T02:35:07.353000Z",
+                    "cloudConnectors": [
+                        {
+                            "id": "ch0fh4qo0002mh5tqcdg",
+                            "signalStrength": 73,
+                            "rssi": -66
+                        }
+                    ],
+                    "transmissionMode": "LOW_POWER_STANDARD_MODE"
+                },
+                "batteryStatus": {
+                    "percentage": 100,
+                    "updateTime": "2023-12-28T05:08:31.250000Z"
+                },
+                "objectPresent": {
+                    "state": "NOT_PRESENT",
+                    "updateTime": "2023-12-29T01:34:01.777000Z"
+                },
+                "touch": {
+                    "updateTime": "2023-12-25T06:50:40.115000Z"
+                }
+            }
+        },
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/c8e8hqb94vs0008a6beg",
+            "type": "temperature",
+            "productNumber": "102152",
+            "labels": {
+                "kit": "kme-82-qff",
+                "name": "Temperature Outdoor"
+            },
+            "reported": {
+                "networkStatus": {
+                    "signalStrength": 45,
+                    "rssi": -83,
+                    "updateTime": "2023-12-29T02:32:22.091977Z",
+                    "cloudConnectors": [
+                        {
+                            "id": "ch0fh4qo0002mh5tqcdg",
+                            "signalStrength": 45,
+                            "rssi": -83
+                        }
+                    ],
+                    "transmissionMode": "LOW_POWER_STANDARD_MODE"
+                },
+                "batteryStatus": {
+                    "percentage": 100,
+                    "updateTime": "2023-12-28T06:00:13.442000Z"
+                },
+                "temperature": {
+                    "value": 7.25,
+                    "updateTime": "2023-12-29T02:32:22.091977Z",
+                    "samples": [
+                        {
+                            "value": 7.25,
+                            "sampleTime": "2023-12-29T02:32:22.091977Z"
+                        },
+                        {
+                            "value": 7.25,
+                            "sampleTime": "2023-12-29T02:27:09.905318Z"
+                        },
+                        {
+                            "value": 7.25,
+                            "sampleTime": "2023-12-29T02:21:57.718659Z"
+                        }
+                    ]
+                },
+                "touch": {
+                    "updateTime": "2023-12-25T03:44:27.102000Z"
+                }
+            }
+        },
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/c8s5aqdsqtrg00fseu30",
+            "type": "waterDetector",
+            "productNumber": "102084",
+            "labels": {
+                "kit": "kme-82-qff",
+                "name": "Water"
+            },
+            "reported": {
+                "networkStatus": {
+                    "signalStrength": 56,
+                    "rssi": -76,
+                    "updateTime": "2023-12-29T02:32:55.612467Z",
+                    "cloudConnectors": [
+                        {
+                            "id": "ch0fh4qo0002mh5tqcdg",
+                            "signalStrength": 56,
+                            "rssi": -76
+                        }
+                    ],
+                    "transmissionMode": "LOW_POWER_STANDARD_MODE"
+                },
+                "batteryStatus": {
+                    "percentage": 100,
+                    "updateTime": "2023-12-28T06:04:12.599000Z"
+                },
+                "waterPresent": {
+                    "state": "NOT_PRESENT",
+                    "updateTime": "2023-12-28T04:54:21.835000Z"
+                },
+                "touch": {
+                    "updateTime": "2023-12-28T04:54:20.146000Z"
+                }
+            }
+        },
+        {
+            "name": "projects/cm4ev8qnfimmajm3qktg/devices/ch0fh4qo0002mh5tqcdg",
+            "type": "ccon",
+            "productNumber": "102506",
+            "labels": {
+                "kit": "ch0fh4qo0002mh5tqcdg",
+                "name": "Incite Cloud Connector"
+            },
+            "reported": {
+                "connectionStatus": {
+                    "connection": "CELLULAR",
+                    "available": [
+                        "CELLULAR"
+                    ],
+                    "updateTime": "2023-12-25T03:13:04.957660Z"
+                },
+                "connectionLatency": null,
+                "ethernetStatus": {
+                    "macAddress": "",
+                    "ipAddress": "10.179.31.10",
+                    "errors": [],
+                    "updateTime": "2023-04-24T09:09:28.615290Z"
+                },
+                "cellularStatus": {
+                    "signalStrength": 60,
+                    "errors": [],
+                    "updateTime": "2023-12-28T16:34:44.669893Z"
+                },
+                "touch": null
+            }
+        }
+    ],
+    "nextPageToken": ""
+}

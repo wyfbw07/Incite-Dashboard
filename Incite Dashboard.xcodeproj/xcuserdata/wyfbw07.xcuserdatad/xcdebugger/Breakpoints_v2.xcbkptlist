@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "801AD00F-C048-4302-ACBB-219690E36133"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CC28DC1-16B2-48F3-81F1-3E418AFDB8EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Incite Dashboard/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchData(completion:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C0B91DD-1381-4481-AD5F-5CBCE0E0B93C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Incite Dashboard/DashboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3C0B91DD-1381-4481-AD5F-5CBCE0E0B93C - 9f713bf1c99c1481"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Incite_Dashboard.DashboardView.body.getter : some"
+                  moduleName = "Incite Dashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyfbw07/Local/Xcode%20Projects/Git-GitKraken/Incite%20Dashboard/Incite%20Dashboard/DashboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+               <Location
+                  uuid = "3C0B91DD-1381-4481-AD5F-5CBCE0E0B93C - 5338813c6d4d3a8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Incite_Dashboard.Device) -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.alignmentGuide(_: SwiftUI.HorizontalAlignment, computeValue: (SwiftUI.ViewDimensions) -&gt; CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, Swift.Never&gt; in Incite_Dashboard.DashboardView.body.getter : some"
+                  moduleName = "Incite Dashboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyfbw07/Local/Xcode%20Projects/Git-GitKraken/Incite%20Dashboard/Incite%20Dashboard/DashboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
