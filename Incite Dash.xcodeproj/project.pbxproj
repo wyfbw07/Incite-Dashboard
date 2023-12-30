@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3753BE52B3F74760033CB19 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3753BE42B3F74760033CB19 /* AspectVGrid.swift */; };
+		D3753BE72B3F757E0033CB19 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3753BE62B3F757E0033CB19 /* GridItemView.swift */; };
 		D39134952B3E604B004B0088 /* Incite_DashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39134942B3E604B004B0088 /* Incite_DashApp.swift */; };
 		D39134972B3E604B004B0088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39134962B3E604B004B0088 /* ContentView.swift */; };
 		D39134992B3E604C004B0088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39134982B3E604C004B0088 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3753BE42B3F74760033CB19 /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		D3753BE62B3F757E0033CB19 /* GridItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		D39134912B3E604B004B0088 /* Incite Dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incite Dash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39134942B3E604B004B0088 /* Incite_DashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incite_DashApp.swift; sourceTree = "<group>"; };
 		D39134962B3E604B004B0088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,8 +56,10 @@
 			children = (
 				D39134942B3E604B004B0088 /* Incite_DashApp.swift */,
 				D39134962B3E604B004B0088 /* ContentView.swift */,
+				D3753BE42B3F74760033CB19 /* AspectVGrid.swift */,
 				D39134A32B3E61AF004B0088 /* DashboardView.swift */,
 				D39134A52B3E62CB004B0088 /* DashboardViewModel.swift */,
+				D3753BE62B3F757E0033CB19 /* GridItemView.swift */,
 				D39134B82B3E974C004B0088 /* DetailsView.swift */,
 				D39134B42B3E82B3004B0088 /* APIManager.swift */,
 				D391349A2B3E604C004B0088 /* Incite_Dash.entitlements */,
@@ -177,6 +183,8 @@
 				D39134B72B3E8637004B0088 /* Concepts.swift in Sources */,
 				D39134952B3E604B004B0088 /* Incite_DashApp.swift in Sources */,
 				D39134A62B3E62CB004B0088 /* DashboardViewModel.swift in Sources */,
+				D3753BE52B3F74760033CB19 /* AspectVGrid.swift in Sources */,
+				D3753BE72B3F757E0033CB19 /* GridItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +328,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -328,7 +336,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YifanWang.Incite-Dashboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +367,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -366,7 +375,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YifanWang.Incite-Dashboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

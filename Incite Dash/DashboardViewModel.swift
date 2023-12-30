@@ -23,7 +23,7 @@ extension DashboardView {
                         self.devices = jsonObject.devices
                     case .failure(let error):
                         print("Error: \(error)")
-                        // Handle the error here
+                        // Handle the error
                     }
                 }
             }

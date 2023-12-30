@@ -7,15 +7,6 @@
 
 import Foundation
 
-//extension Device {
-//    static var preview: Device {
-//        let url = Bundle.main.url(forResource: "PreviewData", withExtension: "json")!
-//        let data = try! Data(contentsOf: url)
-////        let wrapper = try! JSONDecoder.apiDecoder.decode(Wrapper<Device>.self, from: data)
-//        let response = try! JSONDecoder().decode(ApiResponse.self, from: data)
-//        return response
-//    }
-//}
 extension Device {
     static var preview: [Device] {
         guard let url = Bundle.main.url(forResource: "PreviewData", withExtension: "json"),

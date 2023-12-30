@@ -61,6 +61,5 @@ func fetchData(completion: @escaping (Result<ApiResponse, Error>) -> Void) {
             completion(.failure(NSError(domain: "HTTP Error: \(httpResponse.statusCode)", code: httpResponse.statusCode, userInfo: nil)))
         }
     }
-
     task.resume()
 }

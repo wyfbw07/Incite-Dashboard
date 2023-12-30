@@ -8,7 +8,6 @@
 import Foundation
 
 // Define Codable structs to represent the data structure
-
 struct ApiResponse: Codable {
     let devices: [Device]
     let nextPageToken: String
@@ -37,19 +36,17 @@ struct Labels: Hashable, Codable {
 struct Reported: Hashable, Codable {
     let networkStatus: NetworkStatus?
     let batteryStatus: BatteryStatus?
+    let temperature: Temperature?
     let humidity: Humidity?
     let touch: Touch?
-    // Add other properties as needed
 }
 
-// Define CloudConnector struct
 struct CloudConnector: Hashable, Codable {
     let id: String
     let signalStrength: Int
     let rssi: Int
 }
 
-// Define NetworkStatus struct
 struct NetworkStatus: Hashable, Codable {
     let signalStrength: Int
     let rssi: Int
@@ -58,20 +55,28 @@ struct NetworkStatus: Hashable, Codable {
     let transmissionMode: String
 }
 
-// Define BatteryStatus struct
 struct BatteryStatus: Hashable, Codable {
     let percentage: Int
     let updateTime: String
 }
 
-// Define Humidity struct
 struct Humidity: Hashable, Codable {
     let temperature: Double
     let relativeHumidity: Double
     let updateTime: String
 }
 
-// Define Touch struct
 struct Touch: Hashable, Codable {
     let updateTime: String
+}
+
+struct Temperature: Hashable, Codable {
+    let samples: [Sample]
+    let updateTime: String
+    let value: Double
+}
+
+struct Sample: Hashable, Codable {
+    let sampleTime: String
+    let value: Double
 }
