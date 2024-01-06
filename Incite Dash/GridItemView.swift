@@ -12,17 +12,28 @@ struct GridItemView: View {
     let device: Device
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: .leading) {
-                Text(device.labels.name)
-                    .font(Font.system(size: DrawingConstants.deviceLabelFontSize))
-                    .foregroundColor(.primary)
-                if let (readings, readingTitles) = scale(device: device) {
-                    ForEach(0..<readings.count, id: \.self) { index in
-                        Text(String(readings[index]))
-                            .padding(.top, 5)
-                            .font(Font.system(size: DrawingConstants.readingFontSize))
-                        Text(readingTitles[index])
-                            .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+            ScrollView(showsIndicators: false){
+                VStack(alignment: .leading) {
+                    Text(device.labels.name)
+                        .font(Font.system(size: DrawingConstants.deviceLabelFontSize))
+                        .foregroundColor(.primary)
+                    if let (readings, readingTitles) = getDeviceNumberReadings(device: device) {
+                        ForEach(0..<readings.count, id: \.self) { index in
+                            Text(String(readings[index]))
+                                .padding(.top, 5)
+                                .font(Font.system(size: DrawingConstants.readingFontSize))
+                            Text(readingTitles[index])
+                                .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+                        }
+                    }
+                    if let (readings, readingTitles) = getDeviceDescriptiveReadings(device: device) {
+                        ForEach(0..<readings.count, id: \.self) { index in
+                            Text(String(readings[index]))
+                                .padding(.top, 5)
+                                .font(Font.system(size: DrawingConstants.readingFontSize))
+                            Text(readingTitles[index])
+                                .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+                        }
                     }
                 }
             }
@@ -31,10 +42,10 @@ struct GridItemView: View {
         .multilineTextAlignment(.leading)
         .foregroundColor(.primary)
         .padding(DrawingConstants.circlePadding)
-        .background(Color(.secondarySystemBackground))
+        .background(Color(.systemFill))
     }
     
-    private func scale(device: Device) -> ([Double], [String])? {
+    private func getDeviceNumberReadings(device: Device) -> ([Double], [String])? {
         var readings = [Double]()
         var readingTitles = [String]()
         
@@ -43,7 +54,7 @@ struct GridItemView: View {
         case "temperature":
             if let temperature = device.reported.temperature?.value {
                 readings.append(temperature)
-                readingTitles.append("Temperature")
+                readingTitles.append("Temperature (C)")
             }
         case "humidity":
             if let humidity = device.reported.humidity?.relativeHumidity {
@@ -66,6 +77,16 @@ struct GridItemView: View {
                 readingTitles.append("Battery Percentage")
             }
         }
+        
+        return (readings, readingTitles)
+    }
+    
+    private func getDeviceDescriptiveReadings(device: Device) -> ([String], [String])? {
+        var readings = [String]()
+        var readingTitles = [String]()
+        
+        readings.append(device.productNumber)
+        readingTitles.append("Product Number")
         
         return (readings, readingTitles)
     }
