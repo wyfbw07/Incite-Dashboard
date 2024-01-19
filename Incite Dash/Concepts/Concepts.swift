@@ -45,6 +45,14 @@ struct CloudConnector: Hashable, Codable {
     let id: String
     let signalStrength: Int
     let rssi: Int
+    let connectionStatus: ConnectionStatus?
+}
+
+struct ConnectionStatus: Hashable, Codable {
+    // Whether the current connection is ETHERNET, CELLULAR, or OFFLINE.
+    let connection: String
+    let updateTime: String
+    
 }
 
 struct NetworkStatus: Hashable, Codable {
