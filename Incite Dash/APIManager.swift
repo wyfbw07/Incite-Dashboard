@@ -8,11 +8,11 @@
 import Foundation
 
 func fetchData(completion: @escaping (Result<ApiResponse, Error>) -> Void) {
-    // Replace these variables with your actual credentials
-    let apiKey = "cm5r8t0eircg008vh6bg"
-    let apiSecret = "b708fb171a754bf087ec5d46f56e2f42"
-
-    let urlString = "https://api.disruptive-technologies.com/v2/projects/cm4ev8qnfimmajm3qktg/devices"
+    
+    let apiKey = "cn6os65glkc000fvi3c0"
+    let apiSecret = "ca8f2a933f124d5eb83b911b2bc1e085"
+    let urlString = "https://api.disruptive-technologies.com/v2/projects/cn39e25vkss3h69meaqg/devices"
+    
     guard let url = URL(string: urlString) else {
         completion(.failure(NSError(domain: "Invalid URL", code: -1, userInfo: nil)))
         return
