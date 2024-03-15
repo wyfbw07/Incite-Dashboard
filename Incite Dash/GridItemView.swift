@@ -12,27 +12,29 @@ struct GridItemView: View {
     let device: Device
     var body: some View {
         GeometryReader { geometry in
-            ScrollView(showsIndicators: false){
-                VStack(alignment: .leading) {
-                    Text(device.labels.name)
-                        .font(Font.system(size: DrawingConstants.deviceLabelFontSize))
-                        .foregroundColor(.primary)
-                    if let (readings, readingTitles) = getDeviceNumberReadings(device: device) {
-                        ForEach(0..<readings.count, id: \.self) { index in
-                            Text(String(readings[index]))
-                                .padding(.top, 5)
-                                .font(Font.system(size: DrawingConstants.readingFontSize))
-                            Text(readingTitles[index])
-                                .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+            VStack(alignment: .leading) {
+                Text(device.labels.name ?? device.labels.kit)
+                    .font(Font.system(size: DrawingConstants.deviceLabelFontSize))
+                    .foregroundColor(.primary)
+                ScrollView(showsIndicators: false){
+                    VStack(alignment: .leading) {
+                        if let (readings, readingTitles) = getDeviceNumberReadings(device: device) {
+                            ForEach(0..<readings.count, id: \.self) { index in
+                                Text(String(readings[index]))
+                                    .padding(.top, 5)
+                                    .font(Font.system(size: DrawingConstants.readingFontSize))
+                                Text(readingTitles[index])
+                                    .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+                            }
                         }
-                    }
-                    if let (readings, readingTitles) = getDeviceDescriptiveReadings(device: device) {
-                        ForEach(0..<readings.count, id: \.self) { index in
-                            Text(String(readings[index]))
-                                .padding(.top, 5)
-                                .font(Font.system(size: DrawingConstants.readingFontSize))
-                            Text(readingTitles[index])
-                                .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+                        if let (readings, readingTitles) = getDeviceDescriptiveReadings(device: device) {
+                            ForEach(0..<readings.count, id: \.self) { index in
+                                Text(String(readings[index]))
+                                    .padding(.top, 5)
+                                    .font(Font.system(size: DrawingConstants.readingFontSize))
+                                Text(readingTitles[index])
+                                    .font(Font.system(size: DrawingConstants.readingTitleFontSize))
+                            }
                         }
                     }
                 }
@@ -60,6 +62,10 @@ struct GridItemView: View {
             if let humidity = device.reported.humidity?.relativeHumidity {
                 readings.append(humidity)
                 readingTitles.append("Humidity")
+            }
+            if let temperature = device.reported.humidity?.temperature {
+                readings.append(temperature)
+                readingTitles.append("Temperature (C)")
             }
         default:
             break

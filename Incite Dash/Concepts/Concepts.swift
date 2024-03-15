@@ -30,7 +30,7 @@ extension Device: Codable {
 
 struct Labels: Hashable, Codable {
     let kit: String
-    let name: String
+    let name: String?
 }
 
 struct Reported: Hashable, Codable {

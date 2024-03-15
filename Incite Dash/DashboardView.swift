@@ -28,7 +28,8 @@ struct DashboardView: View {
 //                                        .stroke(.blue, lineWidth: 1)
 //                                )
                         }
-                    }.padding(5)
+                    }
+                    .padding(5)
                 }
                 .padding(.top, 5)
                 .padding(.horizontal, 5)
